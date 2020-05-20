@@ -683,7 +683,7 @@ var FD = (function (exports, Math) {
                 result = boolname;
             }
 
-            console.log('GRAPH: ' + argv[0] + ' ' + opname + ' ' + argv[1] + ' :: ' + boolname);
+            //console.log('GRAPH: ' + argv[0] + ' ' + opname + ' ' + argv[1] + ' :: ' + boolname);
 
             this[opname].apply(this, argv);
             positive_propagator = this._propagators.pop();
@@ -1035,7 +1035,7 @@ var FD = (function (exports, Math) {
             retval = sumname;
         }
 
-        console.log('GRAPH: ' + v1name + ' + ' + v2name  + ' = ' + sumname);
+        //console.log('GRAPH: ' + v1name + ' + ' + v2name  + ' = ' + sumname);
 
         this.newprop({
             allvars: [v1name, v2name, sumname],
